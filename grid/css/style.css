@@ -1,0 +1,25 @@
+.mar{ background-color: #a3dffd; }
+
+
+.img1{ grid-area: a; }
+.img2{ grid-area: b; }
+.img3{ grid-area: c; }
+
+.container--main {
+    max-width: 30vh;
+    margin: 0 auto;
+    justify-content: center;
+
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(5, 200px);
+    grid-template-rows: repeat(2, 200px);
+    grid-template-areas:
+    "a c a c a"
+    "b c b c b";
+}
+
+.img{
+    height: 200px;
+    width: 200px;
+}
